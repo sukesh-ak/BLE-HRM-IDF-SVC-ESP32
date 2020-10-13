@@ -1,8 +1,8 @@
-## ESP-IDF BLE HRM (Heart Rate Monitor) Service for ESP32
-This is an attempt to create BLE HRM Service using BLE Arduino library but used as a component of ESP-IDF without taking full Arduino dependency.
+## ESP-IDF BLE Heart Rate Service for ESP32
+This is an attempt to create BLE HR Service using BLE Arduino library but used as a component of ESP-IDF without taking full Arduino dependency.
 
 ### How does it work?
-Heart Rate Monitor service is a standard published by Bluetooth standards which means that the service GUID and characteristics are all pre-defined. This also makes it easy to test the service using any HRM App on smartphone.
+Heart Rate Service is a standard published by Bluetooth standards which means that the service GUID and characteristics are all pre-defined. This also makes it easy to test the service using any HRM App on smartphone.
 
 #### HRM Service and Measurements
 - Heart Rate Service - 0x180D
