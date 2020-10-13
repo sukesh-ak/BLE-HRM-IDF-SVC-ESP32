@@ -19,3 +19,6 @@ Install any HRM BLE App and search and connect to your ESP32 device.
 
 ##### Screenshots
 ![nRFToolbox](https://github.com/sukesh-ak/BLE-HRM-IDF-SVC-ESP32/blob/main/assets/screenshots.jpg)
+
+##### Credits
+Thanks to [Neil Kolban](https://github.com/nkolban/) for the C++ BLE ESP32 library.
