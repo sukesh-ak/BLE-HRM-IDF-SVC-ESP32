@@ -20,5 +20,21 @@ Install any HRM BLE App and search and connect to your ESP32 device.
 ##### Screenshots
 ![nRFToolbox](https://github.com/sukesh-ak/BLE-HRM-IDF-SVC-ESP32/blob/main/assets/screenshots.jpg)
 
+
+##### Troubleshooting Note
+My CMakeLists.txt inside components folder looks like this after fixing some header file missing errors
+
+```
+	set(COMPONENT_SRCDIRS "src")
+	set(COMPONENT_ADD_INCLUDEDIRS "src" 
+	        "$ENV{IDF_PATH}/components/bt/host/bluedroid/api/include/api"
+	        "C:/ESP32/arduino-esp32/cores/esp32"
+	        "C:/ESP32/esp-idf/components/bt/include"
+	)
+	list(APPEND COMPONENT_REQUIRES "nvs_flash")
+	register_component()
+```
+
 ##### Credits
 Thanks to [Neil Kolban](https://github.com/nkolban/) for the C++ BLE ESP32 library.
+
